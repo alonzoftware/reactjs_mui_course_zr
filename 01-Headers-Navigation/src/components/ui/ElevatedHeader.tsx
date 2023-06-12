@@ -37,7 +37,8 @@ export const ElevatedHeader = () => {
         <React.Fragment>
             <CssBaseline />
             <ElevationScroll>
-                <AppBar>
+                {/* <AppBar position="fixed" color="secondary"> */}
+                <AppBar position="fixed">
                     <Toolbar>
                         <Typography variant="h6" component="div">
                             Scroll to elevate App bar

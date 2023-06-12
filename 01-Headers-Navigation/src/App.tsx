@@ -6,23 +6,13 @@ import './App.css'
 import { Header } from './components/ui/Header'
 import Box from '@mui/material/Box/Box'
 import { ElevatedHeader } from './components/ui/ElevatedHeader'
-import { purple, red } from '@mui/material/colors';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: purple[100],
-      // main: '#d50000',
-    },
-  },
-});
+import { ThemeProvider } from '@mui/material/styles';
+import { mainThemeApp, secThemeApp } from './components'
 
 function App() {
   return (
     <>
-      <ThemeProvider theme={theme}>...
+      <ThemeProvider theme={secThemeApp}>...
 
         <ElevatedHeader />
         {/* <Header /> */}
