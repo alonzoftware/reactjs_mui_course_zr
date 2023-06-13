@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 
+
 export const Header = () => {
     const onCLickBox = () => {
         console.log('Here your Text');
@@ -22,7 +23,7 @@ export const Header = () => {
                         sx={{ mr: 2 }}>
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" color="inherit" component="div">
+                    <Typography variant="h3" color="inherit" component="div">
                         SISBADI
                     </Typography>
                 </Toolbar>

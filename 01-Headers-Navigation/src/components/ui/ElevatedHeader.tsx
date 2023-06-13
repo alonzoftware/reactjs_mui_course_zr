@@ -15,7 +15,6 @@ interface Props {
     window?: () => Window;
     children: React.ReactElement;
 }
-
 function ElevationScroll(props: Props) {
     const { children, window } = props;
     // Note that you normally won't need to set the window ref as useScrollTrigger
@@ -33,6 +32,7 @@ function ElevationScroll(props: Props) {
 }
 
 export const ElevatedHeader = () => {
+
     return (
         <React.Fragment>
             <CssBaseline />
@@ -40,8 +40,9 @@ export const ElevatedHeader = () => {
                 {/* <AppBar position="fixed" color="secondary"> */}
                 <AppBar position="fixed">
                     <Toolbar>
-                        <Typography variant="h6" component="div">
-                            Scroll to elevate App bar
+                        {/* <Typography variant="h3" color="secondary" component="div"> */}
+                        <Typography variant="h3" component="div">
+                            SISBADI
                         </Typography>
                     </Toolbar>
                 </AppBar>
